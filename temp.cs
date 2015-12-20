@@ -22,6 +22,7 @@ using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using log4net;
+using LibVLC.NET;
 using MissionPlanner.Arduino;
 using MissionPlanner.Comms;
 using MissionPlanner.Controls;
@@ -1646,6 +1647,18 @@ namespace MissionPlanner
             if (InputBox.Show("enter comport", "enter comport", ref port) == DialogResult.OK)
             {
                 new AP_GPS_GSOF(port);
+            }
+        }
+
+        private void myButton_vlc_Click(object sender, EventArgs e)
+        {
+            var render = new vlcrender();
+
+            string url = render.playurl;
+            if (InputBox.Show("enter url", "enter url", ref url) == DialogResult.OK)
+            {
+                render.playurl = url;
+                render.Start(FlightData.myhud.Width, FlightData.myhud.Height);
             }
         }
     }
