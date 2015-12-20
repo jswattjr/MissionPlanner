@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanner", "MissionPlanner.csproj", "{A2E22272-95FE-47B6-B050-9AE7E2055BF5}"
 EndProject
@@ -44,6 +44,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseClasses", "ExtLibs\BaseClasses\BaseClasses.csproj", "{2A8E8AF5-74E7-49DB-A42E-9360FA7A6CC4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanner.Controls", "ExtLibs\Controls\MissionPlanner.Controls.csproj", "{C8B88795-6D01-494D-83AD-6944BD4C5023}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F7994CE-823F-4A04-BBEA-D0A3808FF56D} = {7F7994CE-823F-4A04-BBEA-D0A3808FF56D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanner.Comms", "ExtLibs\Comms\MissionPlanner.Comms.csproj", "{825E7A10-390C-4A2B-B3A8-491D14966912}"
 EndProject
